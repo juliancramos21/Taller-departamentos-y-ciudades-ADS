@@ -1,12 +1,12 @@
 package org.example.Modelo;
 
-public class Departamento {
+public class Ciudad {
     private String nombre;
     private String capital;
     private int poblacion;
     private String descripcion;
 
-    public Departamento(String nombre, String capital, int poblacion, String descripcion) {
+    public Ciudad(String nombre, String capital, int poblacion, String descripcion) {
         this.nombre = nombre;
         this.capital = capital;
         this.poblacion = poblacion;
@@ -43,15 +43,5 @@ public class Departamento {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    @Override
-    public String toString() {
-        return "Departamento{" +
-                "nombre='" + nombre + '\'' +
-                ", capital='" + capital + '\'' +
-                ", poblacion=" + poblacion +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
     }
 }
