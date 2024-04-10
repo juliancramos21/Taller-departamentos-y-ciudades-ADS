@@ -9,4 +9,5 @@ public interface DatosDepartamento {
     Departamento buscarDepartamento(String nombre);
     void actualizarDepartamento(Departamento departamento, String nombre);
     void eliminarDepartamento(String nombre);
+
 }

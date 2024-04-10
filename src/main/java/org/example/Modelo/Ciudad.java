@@ -2,13 +2,13 @@ package org.example.Modelo;
 
 public class Ciudad {
     private String nombre;
-    private String capital;
+    private String pais;
     private int poblacion;
     private String descripcion;
 
-    public Ciudad(String nombre, String capital, int poblacion, String descripcion) {
+    public Ciudad(String nombre, String pais, int poblacion, String descripcion) {
         this.nombre = nombre;
-        this.capital = capital;
+        this.pais = pais;
         this.poblacion = poblacion;
         this.descripcion = descripcion;
     }
@@ -21,12 +21,12 @@ public class Ciudad {
         this.nombre = nombre;
     }
 
-    public String getCapital() {
-        return capital;
+    public String getPais() {
+        return pais;
     }
 
-    public void setCapital(String capital) {
-        this.capital = capital;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
     public int getPoblacion() {
@@ -43,5 +43,15 @@ public class Ciudad {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad{" +
+                "nombre='" + nombre + '\'' +
+                ", pais='" + pais + '\'' +
+                ", poblacion=" + poblacion +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
     }
 }
